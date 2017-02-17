@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p id="value">Answer</p>
+    <script>
+        function area1() {
+
+
+            var side1 = 7;
+            var side2 = 8;
+            var side3 = 9;
+            var perimeter = (side1 + side2 + side3) / 2;
+            var area = Math.sqrt(perimeter * ((perimeter - side1) * (perimeter - side2) * (perimeter - side3)));
+           // document.write(area);
+        }  //can't get to print unless I use document.write without the function
+        area1();
+    </script>
+</body>
+</html>

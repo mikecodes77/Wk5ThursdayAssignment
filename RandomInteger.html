@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p id="demo"></p>
+   <!-- <button onclick ="getRandom()">Pick number here</button>-->
+   
+     <script>
+    //  var num1 = prompt("Enter a number 1 - 10");
+
+       function getRandom() {
+           var num = Math.floor((Math.random() * 10) + 1);
+        //   document.getElementById("demo").innerHTML = num;
+           var num1 = prompt ("Guess the number between 1 and 10")
+           if (num1 === num) {
+               // document.write = "Good job";
+               alert("Matched")
+           } else {
+               //document.write = "Try again";
+               alert("Not matched, the number was " + num);
+           }
+        }
+       getRandom();
+    </script>
+
+</body>
+</html>
